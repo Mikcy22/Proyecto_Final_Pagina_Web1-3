@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+
 html{
 	scroll-behavior: smooth;
 }
@@ -52,8 +53,8 @@ nav ul li a:hover {
 }	
 #main-header a {
 		color: white; /* color de la letras de la cabecera */
-		padding-right: 50px;
-		padding-left: 50px;
+		padding-right: 30px;
+		padding-left: 30px;
 		
 }
 #logo-header {
@@ -98,50 +99,25 @@ nav ul li a:hover {
 /* Fin de la cabecera */
 
 
-.sub-ani h1,h2{
-	margin: 0; 
-	font-family: 'Crimson Pro', serif;
-  }
-  
-  .sub-ani {
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  color: #0000;
-  background:  linear-gradient(
-	90deg,
-	white calc(50% - 1.6ch), /*Color de la letra */
-	yellow 0 calc(50% + 0.9ch),/*Color de la barra de transicion */
-  #0000 0
-  )
-  
-  right/calc(200% + 1ch) 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: reveal 2.5s infinite;
- 
-  }
-  
-  
-  @keyframes reveal{
-  to{
-	background-position: left;
-	}
-  
-	}
-    
+
   #content{
+
 	display: flex;
 	flex-direction: column;
 	height: auto;
 	width: 100%;
 	align-items: center;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
+	font-size: 50px;
+	
 	background-color:rgb(112, 81, 81);
   }
-  #content h2{
-	padding-bottom: 30px;
+  #content h1,#content h2{
+	color:white;
+	text-shadow: 4px 4px 4px rgb(56, 18, 18);
+	font-size: 50px;
+
   }
 
 /*  DIV info-box*/
