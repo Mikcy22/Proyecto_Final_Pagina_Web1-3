@@ -94,6 +94,7 @@ nav ul li a:hover {
         left: 0; /* la cabecera al lado izquierdo */
         top: 0; /* la cabecera pegada arriba */
         position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+		font-size: 20px;
 }
 
 /* Fin de la cabecera */
@@ -117,7 +118,9 @@ nav ul li a:hover {
 	color:white;
 	text-shadow: 4px 4px 4px rgb(56, 18, 18);
 	font-size: 50px;
-
+  }
+  #nombre{
+	padding-bottom: 30px;
   }
 
 /*  DIV info-box*/
@@ -148,7 +151,7 @@ p.big{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0px auto;
-	padding: 180px 0 110px 0;
+	padding: 180px 0 159px 0;
 	color: white;
 	font-weight: bold;
 	text-align: center;

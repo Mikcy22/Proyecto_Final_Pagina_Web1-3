@@ -10,7 +10,7 @@
    
 </head>
 <body>
-
+    
     <a href="../index.html">
         <button><i class="fa-solid fa-house-user"></i> &nbsp; HOME</button>
       </a> 
@@ -19,15 +19,45 @@
         <aside>
             <h1>Register</h1>
             <h2>Por favor, rellena todos los datos</h2>
-            <form action="">
-                <input type="text" placeholder="Firts name" />
-                <input type="text" placeholder="Last name" />
-                <hr>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
+            <form id="signupForm">
 
-               
-                <button type="submit">Register</button>
+                <label for="firstName">Nombre:</label>
+                <input type="text" id="firstName" name="firstName">
+
+                <label for="lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="passwordConfirm">Confirma tu contraseña:</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm">
+                
+                <button type="submit" value="Registrarse">Register</button>
+                
+                <script>
+                    let form = document.getElementById("signupForm");
+                    form.onsubmit = function(event) {
+                      event.preventDefault(); // Prevenimos el envío del formulario.
+                      let firstName = form.elements.firstName.value;
+                      let lastName = form.elements.lastName.value;
+                      let email = form.elements.email.value;
+                      let password = form.elements.password.value;
+                      let passwordConfirm = form.elements.passwordConfirm.value;
+                  
+                      if (firstName === "" || lastName === "" || email === "" || password === "" || passwordConfirm === "") {
+                        alert("Por favor, rellena todos los campos.");
+                      } else if (password !== passwordConfirm) {
+                        alert("La contraseña y la confirmación de contraseña no coinciden.");
+                      } else {
+                        // Aquí iría el código para procesar el formulario y hacer el registro.
+                        console.log("Toca hacer el enlace al servidor")
+                      }
+                    };
+                  </script>
             </form>
             <p>¿Estas logeado? <a href="../Login/login.html">Logeate</a></p>
         </aside>
