@@ -25,80 +25,33 @@ h1 {
 p {
     margin: 0 0 1.5em 0;
 }
-nav {
-    float: right;
+
+
+#navHeader{
+	position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color:rgb(112, 81, 81);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+	  padding-bottom: 40px;
 }
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding-right: 20px;
+
+#navHeader a{
+	color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding-top: 20px;
+	  
 }
-nav ul li {
-        display: inline-block;
-        line-height: 80px;
-}       
-nav ul li a {
-    display: block;
-    padding: 0 10px;
-    text-decoration: none;
-}    
-nav ul li a:hover {
-    background: rgb(54, 54, 54);
-} /* color de botones al poner el raton */
-#main-header {
-	    background: rgb(255, 255, 255);
-	    color: white;
-	    height: 80px;
-}	
-#main-header a {
-		color: white; /* color de la letras de la cabecera */
-		padding-right: 30px;
-		padding-left: 30px;
-		
-}
-#logo-header {
-	float: left;
-	padding: 15px 0 0 20px;
-	text-decoration: none;
-}
-#logo-header:hover {
-		color: #00aeff;
-}
-#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-}
-#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: rgb(255, 255, 255);
-}
-#main-content {
-	background: white;
-	width: 90%;
-	max-width: 800px;
-	margin: 20px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-#main-content header,#main-content .content {
-		padding: 40px;
-}
-#main-header {
-        background: rgb(112, 81, 81);
-        color: white;
-        height: 80px;    
-        width: 100%; /* la cabecera ocupa el ancho completo de la página */
-        left: 0; /* la cabecera al lado izquierdo */
-        top: 0; /* la cabecera pegada arriba */
-        position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-		font-size: 20px;
+#navHeader a:hover{
+	color:yellow;
 }
 
 /* Fin de la cabecera */
-
 
 
   #content{
@@ -176,7 +129,7 @@ p.big{
 /* PRUEBAS */
 #cuboContenedor{
 
-    height: 300px;
+    height: 100px;
     width: 100%;
     margin: 0;
 	padding-top: 0px;
@@ -185,9 +138,6 @@ p.big{
 	text-align: center;
     left: 0;
     top: 0;
-}
-#cuboContenedor img{
-	margin-top: 70px;
 }
 
 /*Empieza la seccion de proyects*/
@@ -297,7 +247,9 @@ color:#000000}
     padding: 0;
 }
 
-#logo{scale: 0.75;}
+#logo{
+	scale: 0.75;
+z-index: 0;}
 
 .contact-me {
 	background-color: #252f31;
@@ -514,3 +466,9 @@ hr {margin:40px;}
     content: "\f38b";
     margin: 110px;
 }
+
+  @media (max-width: 800px) {
+
+	#navHeader a{font-size: 25px;}
+
+  }

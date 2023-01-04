@@ -1,0 +1,46 @@
+<style>
+  .container {
+    display: flex;
+  }
+  .column {
+    width: 50%;
+    padding: 20px;
+  }
+  .column p {
+    font-size: 18px;
+  }
+  .column form {
+    display: flex;
+    flex-direction: column;
+  }
+  .column form label {
+    font-size: 16px;
+  }
+  .column form input,
+  .column form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="container">
+  <div class="column">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit cursus justo, sed vehicula nisl pretium ac. Nunc in leo quis urna euismod laoreet id eu diam. Praesent pellentesque, magna non laoreet dictum, nibh tellus iaculis purus, sit amet porta lacus massa sit amet orci. Suspendisse at quam elementum, dictum quam id, scelerisque sem. Vivamus pellentesque dui ut dui efficitur, a tincidunt leo dapibus. Vivamus egestas neque sed ipsum sollicitudin, id luctus mauris ornare. Duis euismod, urna eget posuere fringilla, lectus neque interdum nisi, eget elementum metus lacus in est. Vivamus dictum nisi at mauris porta, id sollicitudin libero tempus. Duis eget pellentesque lacus, quis elementum nisl.</p>
+  </div>
+  <div class="column">
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
