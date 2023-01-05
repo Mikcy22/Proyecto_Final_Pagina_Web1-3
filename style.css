@@ -29,6 +29,7 @@ p {
 
 #navHeader{
 	position: fixed;
+	font-family: "Constantia", serif;
       top: 0;
       left: 0;
       right: 0;
@@ -36,14 +37,14 @@ p {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 10px 30px;
 	  padding-bottom: 40px;
 }
 
 #navHeader a{
 	color: white;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 30px;
       padding-top: 20px;
 	  
 }
@@ -467,8 +468,9 @@ padding-top: 40px;}
     margin: 110px;
 }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
 
-	#navHeader a{font-size: 20px;}
+	#navHeader a{font-size: 15px;}
+	#about-me{text-align: center;}
 
   }
