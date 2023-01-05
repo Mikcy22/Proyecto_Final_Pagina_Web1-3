@@ -11,7 +11,7 @@ body {
 	background: whitesmoke;  /* Color de la paguina web por debajo del menu */
 	font-size: 1em;
 	line-height: 1.5em;
-	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+	
 }
 /* Empieza de la cabecera */
 h1 {
@@ -43,7 +43,7 @@ p {
 #navHeader a{
 	color: white;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 15px;
       padding-top: 20px;
 	  
 }
@@ -73,6 +73,7 @@ p {
 	font-size: 50px;
   }
   #nombre{
+	padding-top: 110px;
 	padding-bottom: 30px;
   }
 
@@ -104,7 +105,7 @@ p.big{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0px auto;
-	padding: 180px 0 159px 0;
+	padding: 190px 0 159px 0;
 	color: white;
 	font-weight: bold;
 	text-align: center;
@@ -329,54 +330,51 @@ z-index: 0;}
 	margin-top: 20px;
 	border-radius: 5px;
 }
-
-.footer {
-	background-color: #191e22;
-	color: #6A6E71;
-	text-align: center;
-	overflow: hidden;
-}
-
-.footer .footer-folat{
-	float: left;
-	width: 50%;	
-	text-align: center;
-}
-
-.contact-me .info, .contact-me .form {
-    width: 90%;
-    float: left;
-    padding-left: 30px;
-}
-
-.footer ul{
-	list-style: none;
-	padding-left: 0;
-	text-align: center;
-	margin-top: 10px;
-}
+.container {
+    background-color: #252f31;
+    color: white;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+ 
+.paragrph{
+  text-align: justify;
+  color: #6A6E71;
+  padding-left: 5px;
+  padding-right: 5px;
   
-.footer ul li{
-	width: 5px;
-	height: 5px;
-	display: inline-block;
-	margin: 2px;
-	padding: 5px;
+}
+.paragrph2{
+  padding-bottom: 5px;
+  color: #6A6E71;
+  text-align: center;
+}
+  .div {
+    width: 49%;
+    padding-left: 5px;
+  }
+  .form label{
+	display: block;
+	color: #d1d6da;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
-.footer ul li a{font-size: 1em;}
-
-.footer a{
-	color: #999;
-	text-decoration: none;
-	text-align: center;
-	font-size: 0.9em;
+.form input[type="text"],.form input[type="email"],.form textarea{
+  background-color:#4b5557;
 }
 
-.footer a:hover{color: #2dcc70;}
 
-hr {margin:40px;}
-
+  @media (max-width: 600px) {
+    .div {
+      width: 100%;
+    }
+    .paragrph{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
   /*Acaba el footer*/
 
 #contenedor {
@@ -448,9 +446,11 @@ p.paragrph {padding-bottom: 25px;}
 
 .footer a:hover{color: #2dcc70;}
 
-hr {margin:40px;}
+hr {margin:10px;}
 
-#about-me{padding-bottom: 20px;}
+#about-me{
+	padding-bottom: 20px;
+padding-top: 40px;}
 
 .fa-square-js:before {
     content: "\f3b9";
@@ -469,6 +469,6 @@ hr {margin:40px;}
 
   @media (max-width: 800px) {
 
-	#navHeader a{font-size: 25px;}
+	#navHeader a{font-size: 20px;}
 
   }
