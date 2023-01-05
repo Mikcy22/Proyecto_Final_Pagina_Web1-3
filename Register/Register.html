@@ -7,6 +7,7 @@
     <title>Register_Page_Proyecto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Register.css">
+    
    
 </head>
 <body>
@@ -38,30 +39,10 @@
                 
                 <button type="submit" value="Registrarse">Register</button>
                 
-                <script>
-                    let form = document.getElementById("signupForm");
-                    form.onsubmit = function(event) {
-                      event.preventDefault(); // Prevenimos el envío del formulario.
-                      let firstName = form.elements.firstName.value;
-                      let lastName = form.elements.lastName.value;
-                      let email = form.elements.email.value;
-                      let password = form.elements.password.value;
-                      let passwordConfirm = form.elements.passwordConfirm.value;
-                  
-                      if (firstName === "" || lastName === "" || email === "" || password === "" || passwordConfirm === "") {
-                        alert("Por favor, rellena todos los campos.");
-                      } else if (password !== passwordConfirm) {
-                        alert("La contraseña y la confirmación de contraseña no coinciden.");
-                      } else {
-                        // Aquí iría el código para procesar el formulario y hacer el registro.
-                        console.log("Toca hacer el enlace al servidor")
-                      }
-                    };
-                  </script>
             </form>
             <p>¿Estas logeado? <a href="../Login/login.html">Logeate</a></p>
         </aside>
     </section>
-
+    <script src="register.js"></script>
 </body>
 </html>

@@ -5,7 +5,8 @@
 	<title>Main Miguel Angel</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	</head>
+    	
+</head>
 <body>
 	<header id="main-header">
         <nav id ="navHeader">
@@ -16,7 +17,6 @@
             <a href="#about-me">Sobre mi</a>
         </nav>
 	</header> 	
-
 
 	<div id ="content">
 		<h2 id="nombre">Miguel Ángel</h2>
@@ -34,11 +34,20 @@
 		  <p class="big"><i class="fa-brands fa-css3-alt" id="conEspacio2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt, laudantium nostrum minus fuga aut dolore fugit cupiditate qui..</p>
 		  </div> 
 	</div>
-
+    <div id="cuboContenedor"></div>
 	   	<!--  pruebas -->
-	<div id="cuboContenedor">
-		 
-	</div>
+         	<!--  Mi propio Js -->
+           <button onclick="toggleMenu()" id="botonPop"><i class="fa-solid fa-bars"></i></button>
+           <div id="menu" style="display: none;">
+            <div class="triangulo"></div>
+            <div id="popup">
+                <b> ¡HOLA MUNDO!DISFRUTA DE LA WEB </b></div>
+          </div>
+             
+          
+
+
+
 
     <section class="section-table">
         <div class="section-table-content">
@@ -124,12 +133,8 @@
                         <p class="paragrph">
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
                         </p>
                         <p class="paragrph">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. 
                         </p>
@@ -167,5 +172,6 @@
       
       </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
