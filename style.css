@@ -330,25 +330,9 @@ padding-top: 40px;}
     margin: 110px;
 }
 
-  @media (max-width: 1200px) {
-
-	#navHeader a{font-size: 15px;}
+@media only screen and (min-width: 500px){
+	#navHeader a{font-size: 12px;}
 	#about-me{text-align: center;}
-
-  }
-
-
-  
-@media screen and (min-width: 768px) {
-	#navHeader a{font-size: 15px;}
-	#about-me{text-align: center;}
-
-
-
-	
-}
-@media screen and (max-width: 768px) {
-	
 	div#popup {
 		bottom: 89px;
 		right: 46px;
@@ -357,9 +341,9 @@ padding-top: 40px;}
 		margin-bottom: 8px;
 		margin-right: 14px;
 	}
-	
-	
-}   
+}
+
+
 
 /* ZONA DE PRUEBAS*/
 
