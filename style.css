@@ -43,7 +43,20 @@ p {
       padding: 10px 30px;
 	  padding-bottom: 40px;
 }
-
+#navHeader2 {
+	z-index:0;
+	position: fixed;
+	font-family: "Constantia", serif;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(112, 81, 81);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	padding-bottom: 40px;
+}
 #navHeader a{
 	color: white;
       text-decoration: none;
@@ -329,22 +342,20 @@ padding-top: 40px;}
     content: "\f38b";
     margin: 110px;
 }
-
-
-
 @media screen and (min-width: 768px) {
-	#navHeader a{
-		font-size: 5px;
-	}
+	
 	#about-me{
 		text-align: center;
 	}
-	#apellido,#nombre{font-size: 46px;}
-
+	#apellido,#nombre{
+		font-size: 46px;
 	}
 	div#popup {
 		bottom: 89px;
 		right: 46px;
+	}
+	#botonPop{
+		scale:1.5;
 	}
 	.triangulo {
 		margin-bottom: 8px;
@@ -353,13 +364,31 @@ padding-top: 40px;}
 	#content h1, #content h2 {
 		font-size: 46px;
 	}
+
+	
+}
+@media screen and (max-width: 768px) {
+	
+	
+	#navHeader a{
+		font-size: 20px;
+	}
+	
 }
 
-
+@media screen and (max-width: 510px) {
+	#navHeader {
+		z-index: 0;
+	}
+	#navHeader2 {
+		z-index:1;
+	}
+}
 /* ZONA DE PRUEBAS*/
 
 #botonPop{
 	z-index: 2;
+	scale:1.5;
 	position: fixed;
     bottom: 50px;
     right: 30px;
