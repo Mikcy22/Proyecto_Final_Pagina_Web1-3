@@ -330,9 +330,18 @@ padding-top: 40px;}
     margin: 110px;
 }
 
-@media only screen and (min-width: 500px){
-	#navHeader a{font-size: 12px;}
-	#about-me{text-align: center;}
+
+
+@media screen and (min-width: 768px) {
+	#navHeader a{
+		font-size: 5px;
+	}
+	#about-me{
+		text-align: center;
+	}
+	#apellido,#nombre{font-size: 46px;}
+
+	}
 	div#popup {
 		bottom: 89px;
 		right: 46px;
@@ -341,8 +350,10 @@ padding-top: 40px;}
 		margin-bottom: 8px;
 		margin-right: 14px;
 	}
+	#content h1, #content h2 {
+		font-size: 46px;
+	}
 }
-
 
 
 /* ZONA DE PRUEBAS*/
