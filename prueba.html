@@ -1,70 +1,51 @@
 <style>
-  #navHeader{
-	position: fixed;
-	font-family: "Constantia", serif;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color:rgb(112, 81, 81);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 30px;
-	  padding-bottom: 40px;
-}
-#navHeader2 {
-	z-index:0;
-	position: fixed;
-	font-family: "Constantia", serif;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: rgb(112, 81, 81);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 30px;
-	padding-bottom: 40px;
-}
-#navHeader a{
-	color: white;
-      text-decoration: none;
-      font-size: 30px;
-      padding-top: 20px;
-	  
-}
-#navHeader a:hover{
-	color:yellow;
+  /* Estilo para la cabecera principal */
+#cabecera-principal {
+  background-color: blue;
+  color: white;
+  padding: 20px;
 }
 
-@media screen and (max-width: 510px) {
-	#navHeader {
-		z-index: 0;
-	}
-	#navHeader2 {
-		z-index:1;
-	}
+/* Estilo para la cabecera alternativa */
+#cabecera-alternativa {
+  background-color: red;
+  color: white;
+  padding: 20px;
 }
 
 </style>
+<!-- Esto es el HTML de tu página -->
+<header id="cabecera-principal">
+  <nav id ="navHeader">
+    <a href="./Login/login.html"><div id="Login">Login</div></a>
+    <a href="./Register/Register.html">Registro</a>
+    <a href="#aqui"><div id="menuMin">Conocimientos</div></a>
+    <a href="#cuboContenedor"><div id="menuMin">Projectos</div></a>
+    <a href="#about-me" ><div id="menuMin">Sobre mi</div></a>
+</nav>
+</header>
+<header id="cabecera-alternativa" style="display:none;">
+  <a href="./Login/login.html"><div id="Login">Login</div></a>
+  <a href="./Register/Register.html">Registro</a>
+</header>
 
-<body>
+<!-- A continuación, el código JavaScript -->
+<script>
+  // Obtenemos las referencias a las cabeceras
+  var cabeceraPrincipal = document.getElementById("cabecera-principal");
+  var cabeceraAlternativa = document.getElementById("cabecera-alternativa");
 
-  <header id="main-header">
-    <nav id ="navHeader">
-        <a href="./Login/login.html"><div id="Login">Login</div></a>
-        <a href="./Register/Register.html">Registro</a>
-        <a href="#aqui"><div id="menuMin">Conocimientos</div></a>
-        <a href="#cuboContenedor"><div id="menuMin">Projectos</div></a>
-        <a href="#about-me" ><div id="menuMin">Sobre mi</div></a>
-    </nav>
-    <nav id ="navHeader2">
-        <a href="./Login/login.html"><div id="Login">Login</div></a>
-        <a href="./Register/Register.html">Registro</a>
-        <a href="#aqui"><div id="menuMin">Conocimientos</div></a>
-        <a href="#cuboContenedor"><div id="menuMin">Projectos</div></a>
-        <a href="#about-me" ><div id="menuMin">Sobre mi</div></a>
-    </nav>
-</header> 
-
-</body>
+  // Añadimos un evento "resize" al objeto window
+  window.addEventListener("resize", function() {
+    // Si el ancho de la página es de 400 píxeles o menos
+    if (window.innerWidth <= 400) {
+      // Mostramos la cabecera alternativa y ocultamos la principal
+      cabeceraPrincipal.style.display = "none";
+      cabeceraAlternativa.style.display = "block";
+    } else {
+      // Si no, mostramos la cabecera principal y ocultamos la alternativa
+      cabeceraPrincipal.style.display = "block";
+      cabeceraAlternativa.style.display = "none";
+    }
+  });
+</script>
