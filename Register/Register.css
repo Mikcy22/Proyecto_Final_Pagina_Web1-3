@@ -43,7 +43,7 @@ transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 input[type=text]:focus,
 input[type=password]:focus,
-input[type="email" i]:focus {
+input[type="email" i]:focus{
 transform: scale(1.2);
 }
 button[type=submit] {
